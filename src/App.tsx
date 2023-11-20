@@ -1,6 +1,7 @@
 import './App.css';
 import Cabecalho from './components/Cabecalho';
 import Container from './components/Container';
+import Rodape from './components/Rodape';
 import Titulo from './components/Título';
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
       <Container>
         <Titulo>Área Administrativa</Titulo>
       </Container>
+      <Rodape />
     </>
   );
 }
