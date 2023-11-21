@@ -1,4 +1,6 @@
 import './App.css';
+import Botao from './Botao';
+import Subtitulo from './Subtitulo';
 import Avaliacao from './components/Avaliacao';
 import Cabecalho from './components/Cabecalho';
 import Container from './components/Container';
@@ -22,8 +24,13 @@ function App() {
       <Cabecalho />
       <Container>
         <Titulo>Área Administrativa</Titulo>
+        <Botao>Cadastrar especialista</Botao>
+        <Titulo imagem="consulta">Consultas do Dia</Titulo>
         <Tabela consultas={consultas} />
+        <Titulo imagem="grafico">Consultas mensais por especialista</Titulo>
+        <Subtitulo>Dezembro/22</Subtitulo>
         <Grafico consultas={consultas} profissionais={profissionais} />
+        <Titulo imagem="avaliacao">Avaliações de especialistas</Titulo>
         <Avaliacao profissionais={profissionais} />
       </Container>
       <Rodape />
