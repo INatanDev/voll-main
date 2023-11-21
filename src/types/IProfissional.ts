@@ -3,5 +3,5 @@ export default interface IProfissional{
     imagem: string,
     nome: string,
     especialidade: string,
-    note: number
+    nota: number
 }
